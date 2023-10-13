@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function pesquisar() {
+    let pesquisa = document.getElementById("search-box").value;
+    pesquisa = pesquisa.toLowerCase();
+    let itensLista = document.getElementsByClassName("item-d");
+
+    for (i = 0; i < itensLista.length; i++) {
+        if (!itensLista[i].innerHTML.toLocaleLowerCase().startsWith(pesquisa)) {
+            itensLista[i].style.display = "none"
+        } else {
+            itensLista[i].style.display = "list-item"
+        }
+    }
+}
+    </script>
+    <title>Filtro</title>
+</head>
+<body>
+    <main>
+        <section>
+        <h1>Filtro</h1>
+        <div id="pesquisa">
+            <label for="search-box">Pesquise aqui um dos nomes abaixo</label>
+            <input type="search" id="search-box" oninput="pesquisar()">
+        </div>
+
+        <div id="lista">
+            <ul>
+                <li class="item-d">Marshall D. Teach</li>
+                <li class="item-d">Portgas D. Ace</li>
+                <li class="item-d">Portgas D. Rouge</li>
+                <li class="item-d">Gol D. Roger</li>
+                <li class="item-d">Rocks D. Xebec</li>
+                <li class="item-d">Jaguar D. Saul</li>
+                <li class="item-d">Monkey D. Garp</li>
+                <li class="item-d">Monkey D. Dragon</li>
+                <li class="item-d">Monkey D. Luffy</li>
+                <li class="item-d">Trafalgar D. Water Law</li>
+                <li class="item-d">Nefetari D. Vivi</li>
+                <li class="item-d">Nefetari D. Cobra</li>
+            </ul>
+        </div>
+        </section>
+    </main>
+</body>
+</html>

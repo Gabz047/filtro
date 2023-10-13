@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url('QEa0KjTanv9ixwk1d4YRkFw5kxgKCqfjA5HFtBZ-o7M.png');
+    background-position: center;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 50vh;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    backdrop-filter: blur(35px);
+    border: 1px solid rgb(55, 161, 237);
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-top: 1vh;
+}
+
+#lista {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#lista ul {
+    list-style: none;
+}
+
+#pesquisa {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#pesquisa input {
+    width: 15vh;
+    border-radius: 5px;
+    border: none;
+    height: 3vh;
+    padding: 5px;
+}
